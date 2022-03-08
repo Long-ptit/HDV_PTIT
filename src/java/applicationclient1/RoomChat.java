@@ -41,7 +41,7 @@ public class RoomChat extends javax.swing.JFrame implements MessageListener{
         this.setTitle("hihi");
         try {
             InitialContext context = new InitialContext();
-           connectionFactory = (TopicConnectionFactory) context.lookup("jms/__defaultConnectionFactory");
+           connectionFactory = (TopicConnectionFactory) context.lookup("Auu");
             connection = connectionFactory.createTopicConnection();
             pubSession = connection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
              subSession = connection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
